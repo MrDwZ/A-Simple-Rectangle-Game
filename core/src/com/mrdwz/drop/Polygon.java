@@ -59,7 +59,6 @@ public class Polygon extends Actor{
         for (GraphEdge e: _edges) {
             pixmap.drawLine((int) e.x1, (int) e.y1, (int) e.x2, (int) e.y2);
         }
-        pixmap.drawCircle((int)site.x, (int)site.y, 3);
     }
 
     @Override

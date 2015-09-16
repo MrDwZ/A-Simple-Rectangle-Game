@@ -1,0 +1,11 @@
+Drop_0002_Hard.png
+format:RGBA8888
+filter: Nearest, Nearest
+repeat:none
+Button
+    rotate : false
+    xy : 1, 1
+    size : 70 , 19
+    orig : 64, 64
+    offset: 0, 0
+    index: -1

@@ -1,22 +1,24 @@
 package com.mrdwz.drop;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
 /**
- * Created by eiyasushiki on 15/9/15.
+ * Created by eiyasushiki on 15/9/16.
  */
-public class BackGround extends Actor {
+public class DrawableActor extends Actor {
     Texture texture;
-    String pic = "fabric8.jpg";
+    int X, Y;
+
+    public DrawableActor(Texture texture, int X, int Y) {
+        this.texture = texture;
+        this.X = X; this.Y = Y;
+    }
 
     @Override
     public void draw(Batch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
-        texture = new Texture(Gdx.files.internal(pic));
-        for (int i = 0; i <= 0; i++)
-        batch.draw(texture, 0, i * texture.getHeight());
+        batch.draw(texture, X, Y);
     }
 }
