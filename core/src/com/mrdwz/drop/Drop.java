@@ -35,8 +35,8 @@ public class Drop extends ApplicationAdapter {
 
     @Override
     public void dispose() {
-        startStage.dispose();
-        gameStage.dispose();
+        if (startStage != null) startStage.dispose();
+        if (gameStage != null) gameStage.dispose();
     }
 
 }
